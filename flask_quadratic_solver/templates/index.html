@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Квадратное уравнение</title>
+</head>
+<body>
+    <h2>Решение квадратного уравнения ax² + bx + c = 0</h2>
+    <form action="/solve" method="post">
+        <input type="text" name="a" placeholder="Введите a">
+        <input type="text" name="b" placeholder="Введите b">
+        <input type="text" name="c" placeholder="Введите c">
+        <input type="submit" value="Решить">
+    </form>
+
+    {% if result %}
+        <h3>Результат: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>
+
